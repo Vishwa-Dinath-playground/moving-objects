@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.cursor{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(19, 155, 160);
+    border-radius: 100%;
+    position: absolute;
+    /* transform: translate(-50%,-50%); */
+    visibility: hidden;
+    animation-name: cursor;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    box-sizing: content-box;
+}
+
+@keyframes cursor{
+    from{
+        border: 0 solid rgb(136, 83, 83);
+    };
+
+    to{
+        border: 20px solid red;
+    };
+}
